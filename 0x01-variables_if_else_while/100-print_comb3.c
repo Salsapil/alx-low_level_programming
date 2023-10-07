@@ -21,6 +21,10 @@ if (i != 8 || l != 9)
 putchar(',');
 putchar(' ');
 }
+else
+{
+putchar(' ');
+}
 }
 }
 return (0);
