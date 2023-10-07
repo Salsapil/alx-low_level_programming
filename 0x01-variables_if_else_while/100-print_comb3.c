@@ -21,11 +21,8 @@ if (i != 8 || l != 9)
 putchar(',');
 putchar(' ');
 }
-else
-{
-putchar(' ');
 }
 }
-}
+putchar('\n');
 return (0);
 }
