@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_sign - function
  * @n: check input
@@ -6,22 +7,19 @@
 */
 int print_sign(int n)
 {
-int plus = 43;
-int zero = 48;
-int dash = 45;
 if (n > 0)
 {
+_putchar(43);
 return (1);
-_putchar(plus);
 }
 else if (n < 0)
 {
+_putchar(45);
 return (-1);
-_putchar(dash);
 }
 else
 {
+_putchar(48);
 return (0);
-_putchar(zero);
 }
 }
