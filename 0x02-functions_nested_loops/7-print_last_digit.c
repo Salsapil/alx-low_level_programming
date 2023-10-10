@@ -16,6 +16,5 @@ else
 ld = n % 10;
 }
 _putchar('0' + ld);
-_putchar('\n');
 return (ld);
 }
