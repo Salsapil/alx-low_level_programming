@@ -1,16 +1,15 @@
-#include "main.h"
-#include <stdio.h>
+#include"main.h"
 /**
- * main - entry point for c program
- * Description: C program that print alphabet.
- * Return: always 0 (success)
+ * print_alphabet - Entry point for c program.
+ * Description: C program using print_alphabet.
+ * Return: Always 0 (Success)
 */
 void print_alphabet(void)
 {
-char l;
-for (l = 97; l <= 122; l++)
+char let;
+for (let = 97; let <= 122; let++)
 {
-_putchar(l);
+_putchar(let);
 }
 _putchar('\n');
 }
