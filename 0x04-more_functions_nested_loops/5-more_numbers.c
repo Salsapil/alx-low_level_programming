@@ -11,7 +11,7 @@ for (k = 0; k < 10; k++)
 {
 for (i = 0; i <= 14; i++)
 {
-if ( i >= 10)
+if (i >= 10)
 {
 _putchar(i / 10 + '0');
 _putchar(i % 10 + '0');
