@@ -24,7 +24,7 @@ printf("%s", "Buzz");
 }
 else if (i == 100)
 {
-printf("%d", i);
+printf("%s", "Buzz");
 }
 else
 {
