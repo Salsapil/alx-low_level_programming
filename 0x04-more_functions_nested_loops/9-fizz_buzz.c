@@ -1,8 +1,8 @@
-#include <main.h>
+#include "main.h"
 /**
  * main - print numbers
  * Return: 0
- */
+*/
 int main(void)
 {
 int i;
