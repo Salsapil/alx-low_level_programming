@@ -22,7 +22,7 @@ else if ((i % 3 == 0) && (i % 5 == 0))
 {
 printf("%s ", "FizzBuzz");
 }
-else 
+else
 {
 printf("%d ", i);
 }
@@ -30,3 +30,4 @@ printf("%d ", i);
 printf("\n");
 return (0);
 }
+
