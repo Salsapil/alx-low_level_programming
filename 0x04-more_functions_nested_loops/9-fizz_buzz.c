@@ -1,8 +1,8 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * main - function
- *
- * Return: 0
+* main - function
+*
+* Return: 0
 */
 int main(void)
 {
