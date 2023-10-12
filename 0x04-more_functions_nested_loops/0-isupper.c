@@ -5,14 +5,14 @@
  * @c: check input
  * Return: always 0
  */
-int _isupper(int c)
+char _isupper(char c)
 {
     char c;
     if (c = 'A')
     {
         return (1);
     }
-    else if (c = 'a')
+    else
     {
         return (0);
     }
