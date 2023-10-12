@@ -5,10 +5,9 @@
  * @c: check input
  * Return: always 0
  */
-char _isupper(char c)
+int _isupper(int c);
 {
-    char c;
-    if (c = 'A')
+    if (c >= 'A' && c <= 'Z')
     {
         return (1);
     }
@@ -16,5 +15,4 @@ char _isupper(char c)
     {
         return (0);
     }
-    return (0);
 }
