@@ -16,7 +16,10 @@ while (s[len] != '\0')
 {
 len++;
 }
+if (len > 0)
+{
 len--;
+}
 i = 0;
 lenn = len;
 while (lenn > 0)
