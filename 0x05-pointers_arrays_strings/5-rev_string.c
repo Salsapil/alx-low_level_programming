@@ -22,7 +22,7 @@ len--;
 }
 i = 0;
 lenn = len;
-while (lenn > 0)
+while (lenn != len)
 {
 tem = s[lenn];
 s[lenn] = s[i];
