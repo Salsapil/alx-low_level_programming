@@ -1,12 +1,10 @@
 #include "main.h"
 /**
  * swap_int - function to swap
- *
- * @a: check input
- * @b: check input
- * 
- * Return: avoid
- */
+ * @a:check input
+ * @b:check input
+ * Return:avoid
+*/
 void swap_int(int *a, int *b)
 {
 int x = *a;
