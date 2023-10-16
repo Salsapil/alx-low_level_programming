@@ -18,4 +18,5 @@ while (half <= full)
 _putchar(str[half]);
 half++;
 }
+_putchar('\n');
 }
