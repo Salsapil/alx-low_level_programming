@@ -13,7 +13,11 @@ while (str[full] != '\0')
 full++;
 }
 half = (full / 2);
-while (half <= full)
+if (full % 2 == 1)
+{
+half++;
+}
+while (half < full)
 {
 _putchar(str[half]);
 half++;
