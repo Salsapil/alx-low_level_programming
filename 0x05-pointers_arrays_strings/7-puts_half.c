@@ -12,7 +12,7 @@ while (str[full] != '\0')
 {
 full++;
 }
-half = ((full / 2) + 1);
+half = (full / 2);
 while (half <= full)
 {
 _putchar(str[half]);
