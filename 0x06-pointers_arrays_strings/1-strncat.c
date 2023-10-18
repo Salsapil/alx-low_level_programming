@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strncat - function
+ * _strncat - function
  * @dest: check input
  * @src: check input
  * @n: check input
