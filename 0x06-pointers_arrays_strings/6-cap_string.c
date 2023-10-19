@@ -6,13 +6,16 @@
 */
 char *cap_string(char *str)
 {
-int i;
-
+int i, j;
+char sep[] = " \t\n,;.!?\"(){}";
 for (i = 0; str[i] != '\0'; i++)
 {
-if ((str[i] == 32 || str[i] == 46 || str[i] == 10 || str[i] == 9) && (str[i + 1] <= 122 && str[i + 1] >= 97))
+for (j = 0; sep[j] != '\0'; j++)
 {
-str[i+1] = str[i+1] - 32;
+if ((str[i] == sep[j]) && (str[i + 1] <= 122 && str[i + 1] >= 97))
+{
+str[i + 1] = str[i + 1] - 32;
+}
 }
 if (str[i] == 9)
 {
