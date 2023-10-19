@@ -22,6 +22,5 @@ if (str[i] == 9)
 str[i] = 32;
 }
 }
-str[i] = '\0';
 return (str);
 }
