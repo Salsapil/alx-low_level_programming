@@ -3,25 +3,22 @@
  * rot13 - function
  * @s: check input
  * Return: value
- */
+*/
 char *rot13(char *s)
 {
 int i, j;
-char fisrt[] = "AaBbCcDdEeFfGgHhIiJjKkLlMm";
-char second[] = "NnOoPpQqRrSsTtUuVvWwXxYyZz";
+char first[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char second[] ="NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 for (i = 0; s[i] != '\0'; i++)
 {
-for (j = 0; j < 26; j++)
+for (j = 0; first[j] != '\0' && s[i] != first[j]; j++)
 {
-if (s[i] == fisrt[j])
+
+}
+if (first[j] != '\0')
 {
 s[i] = second[j];
 }
-else if (s[i] == second[j])
-{
-s[i] = fisrt[j];
 }
-}
-}
-return (s);
+return s;
 }
