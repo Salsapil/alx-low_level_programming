@@ -13,7 +13,6 @@ for (i = 0; s[i] != '\0'; i++)
 {
 for (j = 0; first[j] != '\0' && s[i] != first[j]; j++)
 {
-
 }
 if (first[j] != '\0')
 {
