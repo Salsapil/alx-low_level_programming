@@ -3,7 +3,7 @@
  * cap_string - function
  * @str: check input
  * Return: value
-*/
+ */
 char *cap_string(char *str)
 {
 int i, j;
@@ -17,10 +17,7 @@ if ((str[i] == sep[j]) && (str[i + 1] <= 122 && str[i + 1] >= 97))
 str[i + 1] = str[i + 1] - 32;
 }
 }
-if (str[i] == 9)
-{
-str[i] = 32;
 }
-}
+str[i] = '\0';
 return (str);
 }
