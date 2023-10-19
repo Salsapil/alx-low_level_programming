@@ -10,6 +10,10 @@ int i, j;
 char sep[] = " \t\n,;.!?\"(){}";
 for (i = 0; str[i] != '\0'; i++)
 {
+if (str[i] <= 122 && str[i] >= 97 && i == 0)
+{
+str[i] = str[i] - 32;
+}
 for (j = 0; sep[j] != '\0'; j++)
 {
 if ((str[i] == sep[j]) && (str[i + 1] <= 122 && str[i + 1] >= 97))
@@ -18,6 +22,5 @@ str[i + 1] = str[i + 1] - 32;
 }
 }
 }
-str[i] = '\0';
 return (str);
 }
