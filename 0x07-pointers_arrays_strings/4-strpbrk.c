@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strpbrk - function
- * @s: 
- * @accept:
+ * @s: check input
+ * @accept: check input
  * Return: value
 */
 char *_strpbrk(char *s, char *accept)
