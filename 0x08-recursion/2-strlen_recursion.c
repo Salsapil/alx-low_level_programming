@@ -3,7 +3,7 @@
  * _strlen_recursion - function
  * @s: check input
  * Return: value
- */
+*/
 int _strlen_recursion(char *s)
 {
 if (*s == '\0')
