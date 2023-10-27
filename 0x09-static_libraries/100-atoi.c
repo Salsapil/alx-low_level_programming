@@ -7,6 +7,6 @@
 int _atoi(char *s)
 {
 char i;
-i = s;
+i = s[0];
 return ((int)i);
 }
