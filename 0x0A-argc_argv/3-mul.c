@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - function
  * @argc: check input
@@ -18,4 +19,5 @@ else
 printf("Error\n");
 return (1);
 }
+return (0);
 }
