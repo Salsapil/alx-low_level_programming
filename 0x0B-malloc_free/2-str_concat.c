@@ -16,6 +16,14 @@ char *str_concat(char *s1, char *s2)
     len = 0;
     size1 = 0;
     size2 = 0;
+    if (s1 == NULL)
+    {
+        s1 = "\0";
+    }
+    if (s2 == NULL)
+    {
+        s2 = "\0";
+    }
     for (i = 0; i < s1[i]; i++)
     {
         size1++;
