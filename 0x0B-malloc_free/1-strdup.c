@@ -17,12 +17,12 @@ return (NULL);
 for (i = 0; str[i] != '\0'; i++)
 {
 }
-copy = malloc(i * sizeof(*str));
+copy = malloc(i * sizeof(*str) + 1);
 if (copy == 0)
 {
 return (NULL);
 }
-else 
+else
 {
 for (j = 0; j <= i; j++)
 {
