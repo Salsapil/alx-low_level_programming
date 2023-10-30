@@ -13,7 +13,7 @@ char *array = malloc(size);
 unsigned i;
 if (size == 0 || array == 0)
 {
-return ("NULL");
+return (NULL);
 }
 for (i = 0; i < size; i++)
 {
