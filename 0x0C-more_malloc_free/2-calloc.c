@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _callo - function
+ * _calloc - function
  * @nmemb: check input
  * @size: check input
  * Return: void
