@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * array_range - function
- * @min:
- * @max:
+ * @min: check input
+ * @max: check input
  * Return: value
 */
 int *array_range(int min, int max)
