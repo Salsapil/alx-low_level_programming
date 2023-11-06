@@ -10,9 +10,9 @@ int lenght(const char *str)
 int len;
 int i;
 len = 0;
-for (i = 0; str[i]; i++)
+while (*str++)
 {
-len++;
+    len++;
 }
 return (len);
 }
@@ -51,13 +51,13 @@ if (m == NULL)
 {
 return (NULL);
 }
-m->name = malloc(sizeof(char) * lenght(name) + 1);
+m->name = malloc(sizeof(char) * (lenght(name) + 1));
 if (m->name == NULL)
 {
 free(m);
 return (NULL);
 }
-m->owner = malloc(sizeof(char) * lenght(name) + 1);
+m->owner = malloc(sizeof(char) * (lenght(name) + 1));
 if (m->owner == NULL)
 {
 free(m->name);
