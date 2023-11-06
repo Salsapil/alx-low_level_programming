@@ -57,7 +57,7 @@ if (m->name == NULL)
 free(m);
 return (NULL);
 }
-m->owner = malloc(sizeof(char) * (lenght(name) + 1));
+m->owner = malloc(sizeof(char) * (lenght(owner) + 1));
 if (m->owner == NULL)
 {
 free(m->name);
