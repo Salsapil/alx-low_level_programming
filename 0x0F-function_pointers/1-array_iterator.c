@@ -8,7 +8,8 @@
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-int *pointer = array + (size - 1);
+int *pointer;
+pointer = array + (size - 1);
 if (array && size && action)
 {
 while (array <= pointer)
