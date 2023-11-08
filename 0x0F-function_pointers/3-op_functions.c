@@ -47,7 +47,7 @@ exit(100);
 return (a / b);
 }
 /**
- * op_add - function
+ * op_mod - function
  * @a: check input
  * @b: check input
  * Return: value
