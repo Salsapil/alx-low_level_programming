@@ -33,4 +33,5 @@ exit(99);
 }
 i = f(x, y);
 printf("%d\n", i);
+return (0);
 }
