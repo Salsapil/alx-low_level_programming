@@ -1,5 +1,4 @@
 #include "function_pointers.h"
-#include <stddef.h>
 /**
  * array_iterator - function
  * @array: check input
@@ -9,8 +8,7 @@
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-int *pointer;
-pointer = array + (size - 1);
+int *pointer = array + (size - 1);
 if (array && size && action)
 {
 while (array <= pointer)
