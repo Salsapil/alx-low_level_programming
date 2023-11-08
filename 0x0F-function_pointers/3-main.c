@@ -24,7 +24,7 @@ if (!op_func)
 printf("Error\n");
 exit(99);
 }
-if (!y && (argv[2][0] == '/' || argv[2][0] == '%'))
+if (!y && (argv[2][0] == '/' || argv[2][0] == '%') && !s[1])
 {
 printf("Error\n");
 exit(100);
