@@ -1,6 +1,4 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
 #include <stddef.h>
 /**
  * get_op_func - function
@@ -19,13 +17,12 @@ op_t ops[] = {
 {NULL, NULL}
 };
 int i;
-for (i = 0; ops[i].op; i++)
+for (i = 0; i < 5; i++)
 {
-if (*(ops[i].op) == *s)
+if (s && s[0] == ops[i].op[0])
 {
 return (ops[i].f);
 }
 }
-printf("Error\n");
-exit(99);
+return (NULL);
 }
