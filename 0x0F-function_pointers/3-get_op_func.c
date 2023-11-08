@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stddef.h>
+#include <string.h>
 /**
  * get_op_func - function
  * @s: check input
@@ -19,7 +20,7 @@ int i;
 i = 0;
 while (i < 5)
 {
-if (s && s[0] == ops[i].op[0])
+if (strcmp(s, ops[i].op) == 0)
 {
 return (ops[i].f);
 }
