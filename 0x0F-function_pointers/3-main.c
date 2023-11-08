@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 if (argc != 4)
 {
 printf("Error\n");
-return 98;
+return (98);
 }
 
 int num1 = atoi(argv[1]);
@@ -23,5 +23,5 @@ int (*func)(int, int) = get_op_func(operator);
 int result = func(num1, num2);
 
 printf("%d\n", result);
-return 0;
+return (0);
 }
