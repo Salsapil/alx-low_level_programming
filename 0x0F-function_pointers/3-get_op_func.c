@@ -19,7 +19,7 @@ op_t ops[] = {
 int i;
 for (i = 0; i < 5; i++)
 {
-if (s && s[0] == ops[i].op[0])
+if (s && s[0] == ops[i].op[0] && !s[1])
 {
 return (ops[i].f);
 }
