@@ -6,7 +6,7 @@
  * @argc: check input
  * @argv: check input
  * Return: 0
-*/
+ */
 int main(int argc, char **argv)
 {
 int (*op_func)(int, int);
