@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
+#include <stddef.h>
 #include <stdio.h>
 /**
  * print_strings - function
@@ -17,11 +18,11 @@ for (i = 0; i < n; i++)
 {
 string = va_arg(list, char*);
 printf("%s", string);
-if (separator && i < (n - 1))
+if (separator != NULL && i < (n - 1))
 {
 printf("%s", separator);
 }
-if (!string)
+if (string == NULL)
 {
 printf("nil");
 }
