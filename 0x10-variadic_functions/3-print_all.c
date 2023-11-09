@@ -1,7 +1,11 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-/***/
+/**
+ * print_all - function
+ * @format: check input
+ * Return: void
+*/
 void print_all(const char *const format, ...)
 {
 char *str;
