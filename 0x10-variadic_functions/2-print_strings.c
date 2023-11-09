@@ -24,7 +24,7 @@ printf("%s", separator);
 }
 if (string == NULL)
 {
-printf("nil");
+printf("(nil)");
 }
 }
 printf("\n");
