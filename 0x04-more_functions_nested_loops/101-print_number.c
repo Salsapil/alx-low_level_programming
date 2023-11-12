@@ -1,7 +1,22 @@
 #include "main.h"
-/***/
 void print_number(int n)
 {
-    _putchar(n + '0');
-    _putchar('\n');
+    int i = 1;
+    unsigned int num;
+
+    if (n < 0) {
+        _putchar('-');
+        num = -n;
+    } else {
+        num = n;
+    }
+
+    while (num / i > 9) {
+        i *= 10;
+    }
+
+    while (i > 0) {
+        _putchar((num / i) % 10 + '0');
+        i /= 10;
+    }
 }
