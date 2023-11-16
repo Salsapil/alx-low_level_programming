@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stddef.h>
 /**
  * _strlen - function
  * @s: check input
