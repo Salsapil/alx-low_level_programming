@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * free_listint - function
+ * free_listint2 - function
  * @head: check input
  * Return: value
 */
@@ -15,4 +15,5 @@ tem = *head;
 *head = (*head)->next;
 free(tem);
 }
+*head = NULL;
 }
