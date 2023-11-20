@@ -19,7 +19,7 @@ while (*head != NULL)
 tem = *head;
 *head = (*head)->next;
 free(tem);
-}
 *head = NULL;
+}
 }
 }
