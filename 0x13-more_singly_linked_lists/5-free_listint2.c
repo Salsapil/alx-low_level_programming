@@ -15,5 +15,5 @@ tem = *head;
 *head = (*head)->next;
 free(tem);
 }
-*head = NULL;
+head = NULL;
 }
