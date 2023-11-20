@@ -12,6 +12,8 @@ if (*head == NULL)
 {
 return;
 }
+else
+{
 while (*head != NULL)
 {
 tem = *head;
@@ -19,4 +21,5 @@ tem = *head;
 free(tem);
 }
 *head = NULL;
+}
 }
