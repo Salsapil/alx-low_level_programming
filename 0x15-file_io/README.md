@@ -1,0 +1,1 @@
+fopen(), fclose(), read, write
