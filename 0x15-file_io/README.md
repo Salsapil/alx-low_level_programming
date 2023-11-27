@@ -27,3 +27,6 @@ Program:
 5- Repeats this process until the end of cp_from is reached.
 6- If read fails, print an error message, closes the file descriptors of cp_from and cp_to, and returns 98.
 7- Closes the file descriptors. If it fails, print an error message and returns 100.
+after edit:
+The permissions of the created file are rw-rw-r--.
+Reads 1,024 bytes at a time "Buffer".
