@@ -17,3 +17,13 @@ Function:
 1- Opens the file using open system call with O_WRONLY | O_APPEND.
 2- Writes the contents of text_content to the file "using write".
 3- Closes the file descriptor and returns 1.
+
+3Task: Write a program that copies the content of a file to another file.
+Program:
+1- Checks if the number of arguments is correct. If it is not, print an error message and returns 97.
+2- Opens file cp_from with O_RDONLY flag. If it fails, print an error message and returns 98.
+3- Opens file cp_to with O_WRONLY | O_CREAT | O_TRUNC flags and 0664 mode. If it fails print an error message, closes the file descriptor of cp_from, and returns 99.
+4- Reads the contents of cp_from file into a buffer of size BUF_SIZE "using read" and writes the contents of the buffer to cp_to "using write". If write fails or does not write the expected amount of bytes, prints an error message, closes the file descriptors of cp_from and cp_to, and returns 99. 
+5- Repeats this process until the end of cp_from is reached.
+6- If read fails, print an error message, closes the file descriptors of cp_from and cp_to, and returns 98.
+7- Closes the file descriptors. If it fails, print an error message and returns 100.
