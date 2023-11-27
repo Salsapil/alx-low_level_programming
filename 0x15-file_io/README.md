@@ -28,5 +28,6 @@ Program:
 6- If read fails, print an error message, closes the file descriptors of cp_from and cp_to, and returns 98.
 7- Closes the file descriptors. If it fails, print an error message and returns 100.
 after edit:
-The permissions of the created file are rw-rw-r--.
-Reads 1,024 bytes at a time "Buffer".
+1- mode variable: The permissions of the created file are rw-rw-r-- / owner and group owner of the file have read and write permissions, while others only have read permission.
+2- do-while loop reads 1,024 bytes at a time from file_from to make fewer system calls. The read function reads up to BUF_SIZE bytes from the file descriptor fd_from into the buffer buf. The write function writes up to rd bytes from the buffer buf to the file descriptor fd_to.
+3- loop continues until read returns 0, indicating that the end of the file has been reached.
