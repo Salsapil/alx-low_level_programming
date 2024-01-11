@@ -2,7 +2,7 @@
 /**
  * print_dlistint - function to print
  * @h: pointer to head
- * return: value
+ * Return: value
  */
 size_t print_dlistint(const dlistint_t *h)
 {
