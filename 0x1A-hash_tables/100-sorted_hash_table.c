@@ -2,7 +2,6 @@
 /**
  * shash_table_create - creates a sorted hash table
  * @size: size of the array
- *
  * Return: pointer to the new hash table
  */
 shash_table_t *shash_table_create(unsigned long int size)
@@ -27,4 +26,29 @@ ht->shead = NULL;
 ht->stail = NULL;
 
 return (ht);
+}
+
+/**
+ * shash_table_get - retrieves a value with a key
+ * @ht: hash table to retrieve value
+ * @key: key to retrieve value
+ * Return: value or NULL
+ */
+char *shash_table_get(const shash_table_t *ht, const char *key)
+{
+shash_node_t *node;
+unsigned long int index;
+
+if (ht == NULL || key == NULL || *key == '\0')
+return (NULL);
+
+index = key_index((const unsigned char *)key, ht->size);
+node = ht->array[index];
+while (node != NULL)
+{
+if (strcmp(node->key, key) == 0)
+return (node->value);
+node = node->next;
+}
+return (NULL);
 }
