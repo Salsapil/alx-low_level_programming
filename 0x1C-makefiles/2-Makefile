@@ -1,0 +1,14 @@
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+all: excutable
+
+%.o: %.c
+	$(CC) -c $< -o $@
+
+excutable:
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	rm -f $(OBJ) $(NAME)
