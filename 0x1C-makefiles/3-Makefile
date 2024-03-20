@@ -1,0 +1,26 @@
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+
+all: $(NAME)
+%.o: %.c
+	$(CC) -c $< -o $@
+
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Clean rule: Deletes Emacs and Vim temporary files along with the executable
+clean:
+	$(RM) *~ $(NAME)
+
+# Oclean rule: Deletes the object files
+oclean:
+	$(RM) $(OBJ)
+
+# Fclean rule: Deletes all Emacs and Vim temporary files, the executable, and the object files
+fclean: clean oclean
+
+# Re rule: Forces recompilation of all source files
+re: fclean all
