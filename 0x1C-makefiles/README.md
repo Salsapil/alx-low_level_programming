@@ -5,10 +5,12 @@
 ### When, why and how to use Makefiles?   
 **when to use Makefiles**   
 - you have a project with multiple source files that need to be compiled.   
+   
 **why to use Makefiles**   
 - Saves time by only recompiling files that have changed.   
 - Improves consistency in the build process.   
 - Makes complex builds easier to manage.   
+   
 **How to use Makefiles**   
 - Create a file named Makefile (or makefile) in your project directory.   
 - Write rules in the Makefile that define how to build targets from source files.   
