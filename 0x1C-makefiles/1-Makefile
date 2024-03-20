@@ -5,5 +5,3 @@ SRC = $(wildcard *.c)
 
 excutable:
 	$(CC) $(SRC) -o school
-clean:
-	rm -f school
