@@ -1,6 +1,8 @@
+all: excutable
+
 CC = gcc
 SRC = $(wildcard *.c)
-all: excutable
+
 excutable:
 	$(CC) $(SRC) -o school
 clean:
