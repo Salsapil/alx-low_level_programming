@@ -2,20 +2,20 @@
 - *make* is a command-line tool used to automate the building (compiling, linking) of software projects.   
 - *Makefiles* are text files with special instructions that tell make what to do and how to do it.   
 ***   
-### When, why and how to use Makefiles?  
+### When, why and how to use Makefiles?   
 **when to use Makefiles**   
-- you have a project with multiple source files that need to be compiled.  
-**why to use Makefiles**    
+- you have a project with multiple source files that need to be compiled.   
+**why to use Makefiles**   
 - Saves time by only recompiling files that have changed.   
 - Improves consistency in the build process.   
-- Makes complex builds easier to manage.
+- Makes complex builds easier to manage.   
 **How to use Makefiles**   
-- Create a file named Makefile (or makefile) in your project directory.
-- Write rules in the Makefile that define how to build targets from source files.
-- Run the make command from the terminal.
+- Create a file named Makefile (or makefile) in your project directory.   
+- Write rules in the Makefile that define how to build targets from source files.   
+- Run the make command from the terminal.   
 ***   
 ### What are rules and how to set and use them?   
-**Rules in a Makefile specify how to create a target (output file) from its prerequisites (source files).**
+**Rules in a Makefile specify how to create a target (output file) from its prerequisites (source files).**   
 - Structure:   
 ```
 target: prerequisites
