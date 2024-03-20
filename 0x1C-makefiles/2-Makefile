@@ -1,12 +1,15 @@
 CC = gcc
 SRC = main.c school.c
+# Object files (OBJ) derived from source files
 OBJ = $(SRC:.c=.o)
 NAME = school
 all: $(NAME)
 
+# Compile each source file into an object file
 %.o: %.c
 	$(CC) -c $< -o $@
 
+# Link the object files to create the executable
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
