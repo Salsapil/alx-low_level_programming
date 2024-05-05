@@ -14,7 +14,7 @@ if (!array || size == 0)
 {
 return (-1);
 }
-for (i; i < size; i++)
+for (; i < size; i++)
 {
 printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 if (array[i] == value)
